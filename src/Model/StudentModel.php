@@ -59,19 +59,19 @@ public function updateStudent($id)
                           <span>Status</span>
                           <select name="Status" class="form-select" aria-label="Default select example">
                          <option value="'.$student['Status'].'" selected>'.$student['Status'].'</option>
-                          <option value="Enrolled">Errolled</option>
+                          <option value="Enrolled">Enrolled</option>
                           <option value="Pending">Pending</option>
                        </div>
                        
                            <div class="mt-2">
                               <label for="FirstName">
-                                FirstName
+                                First Name
                               <input name="FirstName" type="text" value="'.$student['FirstName'].'" class="form-control">
                            </label>
                          </div>
                          
                           <label for="LastName">
-                         LastName
+                         Last Name
                           <input name="LastName" type="text" value="'.$student['LastName'].'" class="form-control">
                        </label>
                        <label for="Age">
@@ -80,7 +80,7 @@ public function updateStudent($id)
                        </label>
                        
                        <label for="birtDate">
-                          BirtDate
+                          Birth Date
                           <input name="birtDate" type="date" value="'.$student['Birdate'].'" class="form-control">
                        </label>
                        <input name="id" value="'.$student['id'].'" type="hidden">
@@ -163,6 +163,8 @@ GROUP BY
     COUNT(*) AS total
 FROM
     student
+    WHERE
+    schedule != 'Select Schedule'
 GROUP BY
     schedule;");
       $data = [];

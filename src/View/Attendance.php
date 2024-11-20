@@ -47,7 +47,7 @@
         <table id="BranchTable" class="table table-hover table-responsive-sm table-striped">
             <thead>
             <tr>
-                <th>StudentId</th>
+                <th>Student ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Action</th>
