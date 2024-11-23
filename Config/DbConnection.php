@@ -5,8 +5,8 @@ class DbConnection
   private $host = 'localhost';
   private $username = 'root';
   private $password = '';
-  private $DbName = 'cdcms_database';
-  private $port = 3308;
+  private $DbName = 'chil_cdcms_database';
+  private $port = 8090;
   public $conn;
 
 
